@@ -1,0 +1,41 @@
+Part 1: Namespaces and classes
+
+1. Create a namespace called “Core”
+2. Create a namespace called “Core.Abstract”
+3. Create a class “Device” inside the namespace “Core.Abstract”
+4. Implement properties “name”
+    1. Implement these properties as getName() and setName() methods
+
+5. Implement properties “serial number” and “location” for the “Device” class
+    1. Implement these using the "get" and "set" keywords (e.g. get("location"))
+
+Part 2: Inheritance
+
+1. Create a namespace called “Core.Instances”
+2. Create a class “Encoder” inside “Core.Instances” which inhertics
+from the “Device” class
+3. Create a class “Decoder” inside “Core.Instances” which
+inherits from the “Device” class
+
+Part 3: Functions
+
+1. Write a function called “info()" which alerts all enumerable properties of an instance (name, serial number, and location of a device, etc.)
+
+Part 4: UI
+
+1. Create a UI with a textbox and dropdown that let’s you type in a
+name and choose a device type to create
+2. Display the instantiated Device in a list <ul> that shows the name + device type
+3. Create a button “info” next to each device
+
+Part 5: Binding
+
+1. Write a global function called “attach” which will take in an
+object, an event as a string, and a function. attach() should call the
+function on the object when that object’s event gets fired.
+
+      1. e.g. implement function attach(obj, event, fn) { … }
+
+2. Use the attach function to attach each Device instance to the
+“info” button’s onClick event. That is, when onClick is fired, it
+should call your info() method on your object.

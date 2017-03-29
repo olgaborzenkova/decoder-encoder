@@ -1,0 +1,83 @@
+/*  
+	CSS Reset by Eric Meyer - Released under Public Domain
+    http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td 
+                  {margin: 0;padding: 0;border: 0;outline: 0;
+                  font-size: 100%;vertical-align: baseline;
+                  background: transparent;}
+body              {line-height: 1;}
+ol, ul            {list-style: none;}
+blockquote, q     {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';	content: none;}
+:focus            {outline: 0;}
+ins               {text-decoration: none;}
+del               {text-decoration: line-through;}
+table             {border-collapse: collapse;border-spacing: 0;}
+/* end of CSS Reset */
+
+body {
+    background: #fff;
+    font: 14px/1.4 Helvetica, Arial, sans-serif;
+    color: #414141;
+}
+.wrapper {
+    margin: 100px;
+    clear: both;
+    overflow: hidden;
+}
+.column {
+    width: 40%;
+    padding: 0 10% 0px 0px;
+    display: inline-block;
+    float: left;
+}
+.column:nth-of-type(2) {
+    padding: 0 0 0 10%;
+}
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0 0 5px 0px;
+}
+.set-device-container {
+    text-align: right;
+}
+label {
+    font-size: 18px;
+    display: block;
+}
+input,
+select {
+    font: 14px/1.4 Helvetica, Arial, sans-serif;
+    color: #414141;
+    padding: 4px 5px;
+    margin: 15px 0px 0px 10px;
+    border: solid 1px #ccc;
+}
+select {
+    padding: 4px 3px 5px;
+    width: 100px;
+}
+input[type=button] {
+    padding: 4px 10px;
+    cursor: pointer;
+    background: #ddd;
+}
+.device-list-container {
+    text-align: right;
+}
+.device-list-container li {
+    margin: 0 0 10px 0px;
+}
+.device-info {
+    margin: 0 0 0 10px;
+}
